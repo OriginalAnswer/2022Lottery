@@ -25,7 +25,7 @@ setTimeout(function(){target.classList.add("active");}, delay);
 
 function setLottoNumbers(size){
 let numbers = [];
-for(let i=1; i <= 45; i++) {numbers.push(i);} // 1 ~ 45 까지 번호 배열 생성
+for(let i=1; i <= 45; i++){numbers.push(i);} // 1 ~ 45 까지 번호 배열 생성
 //shuffle
 for(let i=0; i < numbers.length; i++){
     let j = Math.floor(Math.random() * numbers.length);
