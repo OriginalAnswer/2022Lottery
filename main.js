@@ -5,14 +5,14 @@ generateBtn.addEventListener("click", function(){setLottoBalls(7);});
 });
 
 function setLottoBalls(size){
-let template = document.querySelector("#lotto-ball-template");
-let lottoBallDiv = template.content.children[0];
+let template = document.querySelector("#lotto-ball-template");//template불러오기
+let lottoBallDiv = template.content.children[0];//template는 .content와 함께 사용
 let lottoWrapperDiv = document.querySelector(".lotto-wrapper");
 lottoWrapperDiv.innerHTML = "";
 let lottoNumbers = setLottoNumbers(7);
 
 for(let i=0; i < lottoNumbers.length; i++){
-    let cloneDiv = document.importNode(lottoBallDiv, true);
+    let cloneDiv = document.importNode(lottoBallDiv, true);//노드 복제, 자식포함
     cloneDiv.querySelector(".number").textContent = lottoNumbers[i];
     lottoWrapperDiv.appendChild(cloneDiv);
     moveBall(cloneDiv, i*500); 
