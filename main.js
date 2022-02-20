@@ -1,7 +1,7 @@
 
 window.addEventListener("load", function(){
 let generateBtn = document.querySelector(".generate-btn");
-generateBtn.addEventListener("click", function(){setBalls(7);});
+generateBtn.addEventListener("click", function(){setBalls(6);});
 });
 
 function setBalls(size){
